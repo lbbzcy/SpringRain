@@ -1,5 +1,35 @@
 extends layout
 
+block links
+    link(rel='stylesheet', href='/css/style.css')
+
 block content
+    header(class='navbar navbar-static-top bs-docs-nav',id='top',role='banner')
+        div.container
+            div.navbar-header
+                button(class='navbar-toggle collapsed js-navbar-collapse',type='button',data-toggle='collapse',data-target='#bs-navbar',aria-controls='bs-navbar',aria-expanded='false')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="javascript:void(0);",class="navbar-brand c-blue logo")
+                    img(src="/img/logo.png",alt="网站logo")
+            nav(id="bs-navbar",class="navbar-collapse collapse",aria-expanded="false")
+                ul(class="nav navbar-nav")
+                    li
+                        a(href="/",class="active") 首页
+                    li
+                        a(href="/resume") 简历
+                    li
+                        a(href="/#!/") 组件
+                    li
+                        a(href="/works") 作品
+                    li
+                        a(href="/blogmanage") 博客管理
+                    li
+                        a(href="/blog") 博客
+                ul(class="nav navbar-nav navbar-right")
+                    li(class="hidden-xs hidden-xs")
+                        span(class="f12 top-middle") 路漫漫其修远兮，吾将上下而求索~~
     .markdown-body
         != resumeContent

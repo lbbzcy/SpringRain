@@ -1,10 +1,13 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+a{
+  color: #333
+}
+.f12{
+  font-size: 12px;
 }
 
 .markdown-body {

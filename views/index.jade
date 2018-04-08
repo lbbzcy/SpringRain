@@ -1,0 +1,70 @@
+
+extends layout
+
+block links
+    link(rel='stylesheet',href='/css/base/common.css')
+    script(src='/js/common/jquery.js')
+    script(src='/js/plugins/masonry-docs.min.js')
+
+block content
+    header(class='navbar navbar-static-top bs-docs-nav',id='top',role='banner')
+        div.container
+            div.navbar-header
+                button(class='navbar-toggle collapsed js-navbar-collapse',type='button',data-toggle='collapse',data-target='#bs-navbar',aria-controls='bs-navbar',aria-expanded='false')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="javascript:void(0);",class="navbar-brand c-blue logo")
+                    img(src="/img/logo.png",alt="网站logo")
+            nav(id="bs-navbar",class="navbar-collapse collapse",aria-expanded="false")
+                ul(class="nav navbar-nav")
+                    li
+                        a(href="/",class="active") 首页
+                    li
+                        a(href="/resume") 简历
+                    li
+                        a(href="/#!/") 组件
+                    li
+                        a(href="/works") 作品
+                    li
+                        a(href="/blogmanage") 博客管理
+                    li
+                        a(href="/blog") 博客
+                ul(class="nav navbar-nav navbar-right")
+                    li(class="hidden-xs hidden-xs")
+                        span(class="f12 top-middle") 路漫漫其修远兮，吾将上下而求索~~
+    section(class="container-fluid index-main text-center")
+        h1(class="title f-as") I am a web coder
+        h2(class="sub-title f-as mt15") you can contact me by
+            a(href="mailto:yin_x_f@163.com?subject=我从您的博客看到您的联系信息") 17602188143@163.com
+        div.container
+            div.row
+                div(class="col-md-3 col sm-6 col-xs-6")
+                    div.each-col
+                        a(href="/resume")
+                            img(src="/img/index-icon1.png",alt="这里是图片",class="img user-photo")
+                        p.desc
+                            a(href="/resume") 个人简历
+                div(class="col-md-3 col sm-6 col-xs-6")
+                    div.each-col
+                        a(href="/resume")
+                            img(src="/img/index-icon3.gif",alt="这里是图片",class="img user-photo")
+                        p.desc
+                            a(href="/resume") 前端组件
+                div(class="col-md-3 col sm-6 col-xs-6")
+                    div.each-col
+                        a(href="/resume")
+                            img(src="/img/index-icon2.svg",alt="这里是图片",class="img user-photo")
+                        p.desc
+                            a(href="/resume") 个人作品
+                div(class="col-md-3 col sm-6 col-xs-6")
+                    div.each-col
+                        a(href="/resume")
+                            img(src="/img/index-icon4.gif",alt="这里是图片",class="img user-photo")
+                        p.desc
+                            a(href="/resume") 个人博客
+    section(class="footer text-center hidden-sm hidden-xs")
+        p ©2016 coderYin 苏ICP备15056083号-1 All rights reserved.
+
+
